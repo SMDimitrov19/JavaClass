@@ -1,4 +1,10 @@
 public class Dog extends Mammal {
+    private String breed;
+    public Dog(int age,double weight, String breed) {
+        super(age,weight);
+        this.breed=breed;
+    }
+
     @Override
     public void eat() {
         System.out.println("Dog is waiting...");
@@ -8,9 +14,8 @@ public class Dog extends Mammal {
     public void walk() {
         System.out.println("Dog is walking on 4 legs");
     }
-
-    @Override
-    public void test() {
-
+    public String toString()
+    {
+        return super.age+" "+weight+" "+breed;
     }
 }
