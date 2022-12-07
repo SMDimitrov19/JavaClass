@@ -1,12 +1,12 @@
 import java.util.*;
 public class Main {
-    public static void main(String[] args) {
-        Dog dog = new Dog();
-        Cat cat = new Cat();
-
-        dog.sleep();
-        dog.test();
-        dog.eat();
-        dog.walk();
+    Car car=new Cars("Leon","gray",110,"Spain");
+    public void main(String[] args) {
+        System.out.println(String.format(
+                "%s is %s color and have %s horse power",
+                car.getModel(),
+                car.getColor(),
+                car.getHorsepower()));
+        System.out.println(car);
     }
 }
